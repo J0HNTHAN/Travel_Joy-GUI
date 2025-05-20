@@ -1,11 +1,11 @@
-#include"Log_in.h"
+#include"MainMenu.h"
 using namespace System;
 using namespace System::Windows::Forms;
 [STAThreadAttribute]
-void main(array<String^>^ args) {
+static void Main(array<String^>^ args) {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 	// Create the main window and run it
-	TravelJoy::Log_in form;
+	TravelJoy::MainMenu form;
 	Application::Run(% form);
 }

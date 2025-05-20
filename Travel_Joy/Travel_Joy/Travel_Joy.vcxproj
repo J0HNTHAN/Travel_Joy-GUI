@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -25,6 +25,7 @@
     <Keyword>ManagedCProj</Keyword>
     <RootNamespace>TravelJoy</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>7.0</WindowsTargetPlatformMinVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -82,7 +83,7 @@
     <Link>
       <AdditionalDependencies />
       <SubSystem>Windows</SubSystem>
-      <EntryPointSymbol>main</EntryPointSymbol>
+      <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -111,7 +112,7 @@
     <Link>
       <AdditionalDependencies />
       <SubSystem>Windows</SubSystem>
-      <EntryPointSymbol>main</EntryPointSymbol>
+      <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -122,12 +123,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ListMyItineraries.cpp" />
     <ClCompile Include="Log_in.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="MakeItineraryForm.cpp" />
+    <ClCompile Include="PaymentForm.cpp" />
+    <ClCompile Include="SelectFlightForm.cpp" />
+    <ClCompile Include="SelectHotelForm.cpp" />
     <ClCompile Include="Sign_Up.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ListMyItineraries.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Log_in.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MakeItineraryForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PaymentForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SelectFlightForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SelectHotelForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Sign_Up.h">
@@ -137,6 +162,21 @@
   <ItemGroup>
     <EmbeddedResource Include="Log_in.resx">
       <DependentUpon>Log_in.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeItineraryForm.resx">
+      <DependentUpon>MakeItineraryForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectFlightForm.resx">
+      <DependentUpon>SelectFlightForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectHotelForm.resx">
+      <DependentUpon>SelectHotelForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sign_Up.resx">
       <DependentUpon>Sign_Up.h</DependentUpon>

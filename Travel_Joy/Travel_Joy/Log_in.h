@@ -1,5 +1,4 @@
 #pragma once
-#include"Sign_Up.h"
 namespace TravelJoy {
 
 	using namespace System;
@@ -231,9 +230,6 @@ namespace TravelJoy {
 		}
 #pragma endregion
 	private: System::Void SignUp_Click(System::Object^ sender, System::EventArgs^ e) {
-		Sign_Up^ sign_up = gcnew Sign_Up();
-		sign_up->Show();
-		this->Hide();
 	}
 };
 }

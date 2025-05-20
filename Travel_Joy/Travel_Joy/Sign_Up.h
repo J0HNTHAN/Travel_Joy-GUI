@@ -263,7 +263,6 @@ namespace TravelJoy {
 private: System::Void SignUp_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void Cancel_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->Close();
 }
 };
 }
